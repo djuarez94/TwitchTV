@@ -1,4 +1,10 @@
 $(document).ready(function(){
+  /*-------------------------------------
+  | Container Fade In
+  -------------------------------------*/
+  $(".container").fadeIn(2000);
+
+
 	//FCC Stream Info and Status API Call
   $.ajax({
     type: "GET",

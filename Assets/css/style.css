@@ -1,5 +1,6 @@
 .container {
     background-color: #F4F3AD;
+    display: none;
 }
 
 .title {
@@ -15,7 +16,7 @@
 
 #fccStatus:hover {
     color: #ff8292;
-    
+
 }
 
 .creator {
