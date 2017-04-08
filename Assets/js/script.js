@@ -35,7 +35,7 @@ $(document).ready(function(){
         if (status==null) {
           status ="<p>404 Not Found</p>";
         }
-$('#followerInfo').prepend("<div class = 'row'>" + "<div class = 'col-md-4'>" + "<img src='" + logo + "'>" + "</div>" + "<div class ='col-md-4'>" + name + "</div>" + "<div class='col-md-4'>" + status + "</div></div>");
+$('#followerInfo').prepend("<div class = 'result row'>" + "<div class = 'col-md-4'>" + "<img src='" + logo + "'>" + "</div>" + "<div class ='col-md-4'>" + displayName + "</div>" + "<div class='col-md-4'>" + status + "</div></div>");
       }
     }
   });
@@ -53,7 +53,7 @@ $('#followerInfo').prepend("<div class = 'row'>" + "<div class = 'col-md-4'>" + 
         var displayName = data3.statusText;
         console.log(data3.statusText);
         var status = data3.status;
-        $('#followerInfo').prepend("<div class = 'row'>" + "<div class = 'col-md-4'>" + "<img src='" + logo + "'>" + "</div>" + "<div class ='col-md-4'>" + name + "</div>" + "<div class='col-md-4'>" + status + "</div></div>");
+        $('#followerInfo').prepend("<div class = 'result row'>" + "<div class = 'col-md-4'>" + "<img src='" + logo + "'>" + "</div>" + "<div class ='col-md-4'>" + displayName + "</div>" + "<div class='col-md-4'>" + status + "</div></div>");
       }
 
     });
